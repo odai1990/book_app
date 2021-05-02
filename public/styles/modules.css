@@ -1,0 +1,109 @@
+div.form-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  fieldset {
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .user-input {
+    height: 50px;
+    width: 295px;
+    border: thin solid black;
+    margin-bottom: 10px;
+  }
+
+  div.radio {
+    height: 50px;
+    width: 300px;
+    background-color: rgb(110, 110, 110);
+    margin-bottom: 10px;
+    color: rgb(224, 224, 224);
+    display: flex;
+    flex-direction: row;
+  }
+
+  .radio-label {
+    margin: 12px 2px 12px 5px;
+  }
+
+  .button {
+    height: 50px;
+    width: 300px;
+    border: thin solid black;
+    color: white;
+    background-color: black;
+    margin-bottom: 10px;
+  }
+
+  /-----Book Grid All Pages-----/
+  .book-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10px 0;
+    background-color: rgb(96, 119, 119);
+    border-radius: 10px;
+  }
+
+  .book-img, 
+  .book-title, 
+  .book-author,
+  .book-description,
+  .book-submit,
+  .book-isbn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+
+  .book-img {
+    width: 150px;
+    margin-top: 15px;
+    border-radius: 5px;
+  }
+
+  .book-title {
+    color: rgb(224, 224, 224);
+    font-size: 20px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .book-author {
+    color: rgb(224, 224, 224);
+    font-size: 15px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .book-description {
+    font-style: italic;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    background-color: rgb(224, 224, 224);
+    border-radius: 10px;
+  }
+
+  .book-submit {
+    margin-bottom: 15px;
+    justify-content: space-between;
+  }
+
+  .book-isbn {
+    color: rgb(224, 224, 224);
+  }
+
+  .edit-label {
+    margin: 5px 0 0 15px;
+    color:rgb(224, 224, 224)
+  }
