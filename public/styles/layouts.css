@@ -1,0 +1,58 @@
+header {
+  background-color: rgb(24, 24, 24);
+  color: rgb(224, 224, 224);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 70px;
+}
+
+nav{
+  display: flex;
+  margin: 10px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav > h3 > a {
+  display: inline;
+  justify-content: space-between;
+  margin: 5px 50px;
+  color: rgb(224, 224, 224);
+}
+
+nav > h3 > a:hover {
+  display: inline;
+  justify-content: space-between;
+  margin: 5px 50px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: rgb(96, 119, 119);
+}
+
+h1 {
+  margin-top: 15px;
+  font-size: 30px;
+}
+
+h2 {
+  margin: 10px 0;
+  color: rgb(24, 24, 24);
+  font-size: 30px;
+  text-align: center;
+}
+
+main {
+  width: 400px;
+   align-items: center;
+   justify-content: center;
+
+ }
+
+ .ssaa{
+   text-align: center;
+ }
