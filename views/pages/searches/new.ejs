@@ -1,42 +1,23 @@
-<!DOCTYPE html>
- <html lang="en">
- <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="/styles/reset.css">
-     <link rel="stylesheet" href="/styles/base.css">
-     <link rel="stylesheet" href="/styles/layouts.css">
-     <link rel="stylesheet" href="/styles/modules.css">
-     <title>Seearch</title>
- </head>
- <body>
-     <header>
-         <h1>The Book App</h1>
-         <nav>
-           <h3><a class="a-header" href="/">HOME</a></h3>
-           <h3><a class="a-header" href="/searches/new">SEARCH</a></h3>
-         </nav>
-       </header>
+<%- include('../layout/header')  %> 
 
          <main>
              <div class="form-div">
-               <form action="/searches" method="POST">
-                 <fieldset>
-                   <label><h2>Search by Title or Author</h2></label>
-                   <input class="user-input" name="Name" type="text" placeholder="Enter a title or author">
-                   <div class="radio">
-                     <label class="radio-label">Title</label>
-                     <input type="radio" name="cat" value="intitle" class="radio-label">
-                   </div>
-                   <div class="radio">
-                     <label class="radio-label">Author</label>
-                     <input type="radio" name="cat" value="inauthor" class="radio-label">
-                   </div>
-                   <input class="button" type="submit">
-                 </fieldset>
-               </form>
-             </div>
-           </main>
-
- </body>
- </html>
+              <form action="/searches" method="POST">
+                <fieldset>
+                  <label><h2>Search by Title or Author</h2></label>
+                  <input class="user-input" name="Name" type="text" placeholder="Enter a title or author">
+                  <div class="radio">
+                    <label class="radio-label">Title</label>
+                    <input type="radio" name="cat" value="intitle" class="radio-label">
+                  </div>
+                  <div class="radio">
+                    <label class="radio-label">Author</label>
+                    <input type="radio" name="cat" value="inauthor" class="radio-label">
+                  </div>
+                  <input class="button" type="submit">
+                </fieldset>
+              </form>
+            </div>
+          </main>
+</body>
+</html>
