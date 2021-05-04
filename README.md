@@ -132,6 +132,30 @@ Actual time needed to complete: 15 min
 
 
 
+Number and name of feature: #10 update data
+
+Estimate of time needed to complete: 15 min
+
+Start time: 1:15
+
+Finish time: 1:30
+
+Actual time needed to complete: 15 min
+
+
+
+Number and name of feature: #11 delete from database
+
+Estimate of time needed to complete: 10 min
+
+Start time: 1:30
+
+Finish time: 1:45
+
+Actual time needed to complete: 15 min
+
+
+
 
 
 

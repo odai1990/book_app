@@ -1,117 +1,145 @@
-/-----Book Search Form-----/
 div.form-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#updateForm
+{
+  text-align: center;
+}
+.form
+{
+  display: block;
+  width: 88%;
+  margin: 7px;
+  border: none;
   
-  fieldset {
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
-  }
+  padding: 12px;
+}
+input{
+  border-radius: 7px;
+}
+fieldset {
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-input {
+  height: 50px;
+  width: 295px;
+  border: thin solid black;
+  margin-bottom: 10px;
+}
+
+div.radio {
+  height: 50px;
+  width: 300px;
+  background-color: #f6f6f6;
+  margin-bottom: 10px;
+  color:#161d6f;
+  display: flex;
+  flex-direction: row;
+  font-size: large;
+}
+
+.radio-label {
+  margin: 12px 2px 12px 5px;
+}
+
+.button {
+  height: 50px;
+  width: 300px;
+  border: thin solid black;
+  color: #161d6f;
+  background-color: #c7ffd8;
+  margin-bottom: 10px;
+}
+
+/*-----Book Grid All Pages-----*/
+.book-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 10px 0;
+  background-color: #98ded9;
+  /* border-radius: 10px; */
+  box-shadow: 0 2.8px 2.2px rgb(15, 15, 15), 0 6.7px 5.3px rgba(202, 22, 22, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035), 0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05), 0 100px 80px rgba(0, 0, 0, 0.07);
+
+}
+
+.book-img, 
+.book-title, 
+.book-author,
+.book-description,
+.book-submit,
+.book-isbn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 10px;
   
-  .user-input {
-    height: 50px;
-    width: 295px;
-    border: thin solid black;
-    margin-bottom: 10px;
-  }
-  
-   div.radio {
-     height: 50px;
-     width: 300px;
-     background-color: #f6f6f6;
-     margin-bottom: 10px;
-     color:#161d6f;
-     display: flex;
-     flex-direction: row;
-     font-size: large;
-   }
+}
 
-   .radio-label {
-    margin: 12px 2px 12px 5px;
-  }
-  
-  .button {
-     height: 50px;
-     width: 300px;
-     border: thin solid black;
-     color: #161d6f;
-     background-color: #c7ffd8;
-     margin-bottom: 10px;
-   }
+.book-img {
+  width: 150px;
+  margin-top: 15px;
+  /* border-radius: 5px; */
+  border: thin solid black;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 1), 0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035), 0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05), 0 100px 80px rgba(0, 0, 0, 0.07);
 
-  /-----Book Grid All Pages-----/
-  .book-grid {
-     display: grid;
-     grid-template-columns: 1fr;
-     margin: 10px 0;
-     background-color: #98ded9;
-     border-radius: 10px;
-   }
+}
 
-  .book-img, 
-  .book-title, 
-  .book-author,
-  .book-description,
-  .book-submit,
-  .book-isbn {
-    display: flex;
-    justify-content: center;
-     align-items: center;
-     margin: 0 auto;
-     margin-top: 10px;
+.book-title {
+  color: #161d6f;
+  font-size: 20px;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+}
 
-   }
+.book-author {
+  color:#161d6f;
+  font-size: 15px;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+}
 
-   .book-img {
-    width: 150px;
-    margin-top: 15px;
-    border-radius: 5px;
-   }
+.book-description {
+  font-style: italic;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+}
 
-   .book-title {
-     color: #161d6f;
-     font-size: 20px;
-     text-align: center;
-     margin-left: 5px;
-     margin-right: 5px;
-   }
+.book-submit {
+  margin-bottom: 15px;
+  justify-content: space-between;
+}
 
-   .book-author {
-     color:#161d6f;
-     font-size: 15px;
-     text-align: center;
-     margin-left: 5px;
-    margin-right: 5px;
-  }
-  
-  .book-description {
-    font-style: italic;
-     margin-left: 10px;
-     margin-right: 10px;
-     padding: 5px;
-     background-color: #f6f6f6;
-     border-radius: 10px;
-   }
+.book-isbn {
+  color: rgb(224, 224, 224);
+}
 
-  .book-submit {
-    margin-bottom: 15px;
-    justify-content: space-between;
-  }
-  
-  .book-isbn {
-    color: rgb(224, 224, 224);
-  }
-  
-   .edit-label {
-     margin: 5px 0 0 15px;
-     color:rgb(224, 224, 224)
-   }
+.edit-label {
+  margin: 5px 0 0 15px;
+  color:rgb(224, 224, 224)
+}
 
-   li:last-child
-   {
-     background-color: transparent;
-   }
+li:last-child,li:nth-child(7),li:nth-child(6)
+{
+  background-color: transparent;
+}
+
+.bookcol
+{
+margin-top: 10px;
+
+color: #dd122d;
+}
