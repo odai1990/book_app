@@ -1,24 +1,43 @@
 <%- include('../layout/header')  %> 
+   <main>
+    <div class="book-results">
+      <h2>Search Results</h2>
 
-    <main>
-     <div class="book-results">
-       <h2>Search Results</h2>
+     
+        <div class="book-grid">
+          <ul>
+            <li calss="hideit"> <img class="book-img hideit" src="<%=data.img%>" /> </li>
+            <li class="book-title hideit"><%= data.title%></li>
+            <li class="book-author hideit"><%= data.auther%></li>
+           
+              <li class="book-description hideit"><%= data.description %></li>  
+              <li class="book-description hideit"><%= data.isbn %></li>  
+            <li class="book-description ">  <form id="updateForm" action="/update/<%=data.id%>?_method=put" method="POST">
+                <input type="text" name="img" value="<%=data.img%>" class="form">
+                <input type="text" name="title" value="<%= data.title%>" class="form">
+                <!-- <input type="text" name="description" value="<%= data.description %>"> -->
+                <textarea value="<%= data.description %>" name="description" class="form" rows='7'>
+                  <%= data.description %>
+                </textarea>
+                <input type="text" name="isbn" value="<%=data.isbn%>" class="form">
+                <input type="text" name="auther" value="<%= data.auther%>" class="form">
+                <input type="submit" value="Update" class="button">
+                
 
-         <div class="book-grid">
-           <ul>
-             <li> <img class="book-img" src="<%=data.img%>" /> </li>
-             <li class="book-title"><%= data.title%></li>
-             <li class="book-author"><%= data.authors%></li>
 
-               <li class="book-description"><%= data.description %></li>  
-               <li class="book-description"><%= data.isbn %></li>  
-
-
-           </ul>
-
-         </div>
-
-     </div>
-   </main>
- </body>
- </html>
+              </form></li>
+             <li class= "book-description"><button id='updateBtn' class="button">Update</button></li> 
+            <li class="book-description"><form action="/delete/<%=data.id%>?_method=delete"  method="POST">
+            <input type="submit" value="Delete" class="button">
+          </form></li>
+          </ul>
+         
+        </div>
+     
+    </div>
+  </main>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>
